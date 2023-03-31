@@ -9,7 +9,7 @@ app.use(express.json());
 app.get('/', (req, res) => {});
 
 app.post('/', (req, res) => {
-  const { array } = req.body;
+  const { data } = req.body;
   const userId = 'aryanpathak_10/08/2002';
   const emailId = 'aryanpathak989@gmail.com';
   const collegeRollNumber = Math.random() * 30;
@@ -17,16 +17,16 @@ app.post('/', (req, res) => {
   const oddArray = [];
   const alphabetArray = [];
 
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (
-      (array[i] >= 'a' && array[i] <= 'z') ||
-      (array[i] >= 'A' && array[i] <= 'Z' && typeof array[i] == string)
+      (data[i] >= 'a' && data[i] <= 'z') ||
+      (data[i] >= 'A' && data[i] <= 'Z' && typeof data[i] == string)
     ) {
-      alphabetArray.push(array[i].toUpperCase());
-    } else if (array[i] % 2 == 0) {
-      evenArray.push(array[i]);
+      alphabetArray.push(data[i].toUpperCase());
+    } else if (data[i] % 2 == 0) {
+      evenArray.push(data[i]);
     } else {
-      oddArray.push(array[i]);
+      oddArray.push(data[i]);
     }
   }
   console.log(evenArray);
