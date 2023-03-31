@@ -26,7 +26,7 @@ app.post('/', (req, res) => {
       alphabetArray.push(data[i].toUpperCase());
     } else if (data[i] % 2 == 0) {
       evenArray.push(data[i]);
-    } else {
+    } else if (data[i] % 2 != 0) {
       oddArray.push(data[i]);
     }
   }
