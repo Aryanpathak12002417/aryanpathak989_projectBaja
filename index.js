@@ -10,7 +10,7 @@ app.get('/', (req, res) => {});
 
 app.post('/', (req, res) => {
   const { data } = req.body;
-  const userId = 'aryanpathak_10/08/2002';
+  const userId = 'aryanpathak_10082002';
   const emailId = 'aryanpathak989@gmail.com';
   const collegeRollNumber = Math.random() * 30;
   const evenArray = [];
