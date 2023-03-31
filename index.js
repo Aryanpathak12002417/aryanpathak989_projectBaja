@@ -34,13 +34,13 @@ app.post('/', (req, res) => {
   console.log(alphabetArray);
 
   const obj = {
-    Status: true,
-    userId: userId,
+    is_success: true,
+    user_id: userId,
     emailId: emailId,
-    collegeTollNumber: collegeRollNumber,
-    evenArray: evenArray,
-    oddArray: oddArray,
-    alphabetArray: alphabetArray,
+    roll_number: collegeRollNumber,
+    even_numbers: evenArray,
+    odd_numbers: oddArray,
+    alphabets: alphabetArray,
   };
 
   res.json(obj);
